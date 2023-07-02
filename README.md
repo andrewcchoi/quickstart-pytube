@@ -50,5 +50,3 @@ For python template explanation, read [this blog post](http://blog.pamelafox.org
 Original pytube post [click here](https://www.linkedin.com/feed/update/urn:li:activity:7080976967759474688/).
 
 Pytube RegexMatchError issue [click here](https://github.com/pytube/pytube/issues/1678)
-
-Pytube RegexMatchError issue [click here](https://github.com/pytube/pytube/pull/1680/files)
