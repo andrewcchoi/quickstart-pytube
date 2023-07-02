@@ -1,55 +1,29 @@
-# Python project template
+# Quickstart PyTube
 
-This is a template repository for any Python project that comes with the following dev tools:
+This is a repository using pytube package.
 
-* `black`: auto-formats code
-* `isort`: sorts the imports
-* `ruff`: looks for common errors
-* `pyupgrade`: upgrades Python syntax
-
-All of those checks are run as pre-commit hooks using the `pre-commit` library.
-
-It includes `pytest` for testing plus the `pytest-cov` plugin to measure coverage.
-
-The checks and tests are all run using Github actions on every pull request and merge to main.
-
-This repository is setup for Python 3.10. To customize that, change the `VARIANT` argument in `.devcontainer/devcontainer.json`, and change the flag passed into `pyupgrade` in `.precommit-config.yaml` and `.github/workflows/python.yaml`.
+This repository is setup for Python 3.10.
 
 ## Development instructions
-
-## With devcontainer
-
-This repository comes with a devcontainer (a Dockerized Python environment). If you open it in Codespaces, it should automatically initialize the devcontainer.
-
-Locally, you can open it in VS Code with the Dev Containers extension installed.
 
 ## Without devcontainer
 
 If you can't or don't want to use the devcontainer, then you should first create a virtual environment:
 
-```
-python3 -m venv .venv
-source .venv/bin/activate
+``` sh
+py -3.10 -m venv venv
+source venv/bin/activate
 ```
 
-Then install the dev tools and pre-commit hooks:
+Then install the packages:
 
-```
-pip3 install --user -r requirements-dev.txt
-pre-commit install
+```sh
+pip3 install --user -r requirements.txt
 ```
 
 ## Adding code and tests
 
-This repository starts with a very simple `main.py` and a test for it at `tests/main_test.py`.
-You'll want to replace that with your own code, and you'll probably want to add additional files
-as your code grows in complexity.
-
-When you're ready to run tests, just run:
-
-```
-pytest
-```
+This repository starts with a very simple `main.py`.
 
 # File breakdown
 
@@ -62,7 +36,6 @@ Here's a short explanation of each file/folder in this template:
   * `workflows`: Folder containing Github actions config files
     * `python.yaml`: File configuring Github action that runs tools and tests
 * `tests`: Folder containing Python tests
-  * `main_test.py`: File with pytest-style tests of main.py
 * `.gitignore`: File describing what file patterns Git should never track
 * `.pre-commit-config.yaml`: File listing all the pre-commit hooks and args
 * `main.py`: The main (and currently only) Python file for the program
@@ -71,8 +44,11 @@ Here's a short explanation of each file/folder in this template:
 * `requirements-dev.txt`: File listing all PyPi packages required for development
 * `requirements.txt`: File listing all PyPi packages required for production
 
-For a longer explanation, read [this blog post](http://blog.pamelafox.org/2022/09/how-i-setup-python-project.html).
+## Resources
+For python template explanation, read [this blog post](http://blog.pamelafox.org/2022/09/how-i-setup-python-project.html).
 
-# 🔎 Found an issue or have an idea for improvement?
+Original pytube post [click here](https://www.linkedin.com/feed/update/urn:li:activity:7080976967759474688/).
 
-Help me make this template repository better by letting us know and opening an issue!
+Pytube RegexMatchError issue [click here](https://github.com/pytube/pytube/issues/1678)
+
+Pytube RegexMatchError issue [click here](https://github.com/pytube/pytube/pull/1680/files)
