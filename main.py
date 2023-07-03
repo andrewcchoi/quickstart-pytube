@@ -53,7 +53,7 @@ lumberjack.addHandler(fh)
 # lumberjack.addHandler(mh)
 
 # %%
-def download_youtube_playlist(url: str, output_dir="downloads", prod: bool=True) -> None:
+def download_youtube_playlist(url: str, output_dir: str="downloads", prod: bool=True) -> None:
     """
     Downloads the videos from a YouTube playlist to the specified output directory.
 
