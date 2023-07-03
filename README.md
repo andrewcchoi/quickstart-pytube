@@ -8,17 +8,17 @@ This repository is setup for Python 3.10.
 
 ## Without devcontainer
 
-If you can't or don't want to use the devcontainer, then you should first create a virtual environment:
+Create a virtual environment:
 
 ``` sh
 py -3.10 -m venv venv
-source venv/bin/activate
+source venv/scripts/activate
 ```
 
 Then install the packages:
 
 ```sh
-pip3 install --user -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Adding code and tests
